@@ -18,6 +18,7 @@ public class EnemyMovement : MonoBehaviour {
 
 	void Update()
 	{
+		// TODO: Task 2 -- let themselves create a path finding algorithm
 		Vector3 dir = target.position - transform.position;
 		transform.Translate(dir.normalized * enemy.speed * Time.deltaTime, Space.World);
 

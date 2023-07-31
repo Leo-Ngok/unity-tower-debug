@@ -48,6 +48,7 @@ public class WaveSpawner : MonoBehaviour {
 
 	IEnumerator SpawnWave ()
 	{
+		// TODO: Make it randomized and become an endless game
 		PlayerStats.Rounds++;
 
 		Wave wave = waves[waveIndex];

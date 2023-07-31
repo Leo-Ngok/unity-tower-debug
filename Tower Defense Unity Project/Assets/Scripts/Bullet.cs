@@ -41,6 +41,7 @@ public class Bullet : MonoBehaviour {
 
 	void HitTarget ()
 	{
+		// TODO: Do the damage logic themselves.
 		GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
 		Destroy(effectIns, 5f);
 
@@ -57,6 +58,7 @@ public class Bullet : MonoBehaviour {
 
 	void Explode ()
 	{
+		// TODO: Let them do group damage effect.
 		Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
 		foreach (Collider collider in colliders)
 		{

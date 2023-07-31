@@ -56,7 +56,7 @@ public class Node : MonoBehaviour {
 			Debug.Log("Not enough money to build that!");
 			return;
 		}
-
+		// TODO: Task 3/4 -- Implement build/ upgrade logic.
 		PlayerStats.Money -= blueprint.cost;
 
 		GameObject _turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
@@ -77,7 +77,7 @@ public class Node : MonoBehaviour {
 			Debug.Log("Not enough money to upgrade that!");
 			return;
 		}
-
+		// TODO: Line 59
 		PlayerStats.Money -= turretBlueprint.upgradeCost;
 
 		//Get rid of the old turret
@@ -97,6 +97,7 @@ public class Node : MonoBehaviour {
 
 	public void SellTurret ()
 	{
+		// TODO: Line 59
 		PlayerStats.Money += turretBlueprint.GetSellAmount();
 
 		GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition(), Quaternion.identity);
@@ -113,7 +114,7 @@ public class Node : MonoBehaviour {
 
 		if (!buildManager.CanBuild)
 			return;
-
+		// TODO: Let them implement hover logic.
 		if (buildManager.HasMoney)
 		{
 			rend.material.color = hoverColor;

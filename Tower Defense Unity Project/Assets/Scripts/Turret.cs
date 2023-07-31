@@ -67,6 +67,7 @@ public class Turret : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		// TODO: Task 3: Let themselves create targeting logic.
 		if (target == null)
 		{
 			if (useLaser)
@@ -110,6 +111,7 @@ public class Turret : MonoBehaviour {
 
 	void Laser ()
 	{
+		// TODO: Task3 -- learn more about raycaster
 		targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
 		targetEnemy.Slow(slowAmount);
 
@@ -132,6 +134,7 @@ public class Turret : MonoBehaviour {
 
 	void Shoot ()
 	{
+		// TODO: Task 3 let them implement attack logic.
 		GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 		Bullet bullet = bulletGO.GetComponent<Bullet>();
 
