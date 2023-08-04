@@ -17,9 +17,9 @@ public class WaveSpawner : MonoBehaviour {
 	{
 	}
 
+	//SpawnControl is call every time when SpawnTrigger Button is clicked
 	public void SpawnControl()
 	{
-		// TODO: Make it randomized and become an endless game
 		if (waveIndex >= waves.Length)
 			return;
 
@@ -35,10 +35,9 @@ public class WaveSpawner : MonoBehaviour {
 
 		waveIndex++;
 	}
-	void SpawnEnemy (GameObject enemy)
+	void SpawnEnemy (GameObject enemy)	
 	{
-		// TODO
-		Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+		// TODO: Task 2: Implement enemy spawning logic
 	}
 
 }

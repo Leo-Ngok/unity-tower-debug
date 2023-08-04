@@ -3,14 +3,17 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
 
-	public float Speed = 10f;
+	//Moving speed of enemy
+	public float Speed = 0.05f;
 	void Start ()
 	{
 	}
 
+	//TODO: Task 3 : Implement enemy moving logic.
+
+	//[Optional] Utilize WayPoints and implement path-finding logic
 	private void Update()
 	{
-		// TODO: Implement Translation.
 	}
 
 }

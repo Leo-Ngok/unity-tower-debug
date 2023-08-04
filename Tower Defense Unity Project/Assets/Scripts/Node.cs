@@ -7,6 +7,7 @@ public class Node : MonoBehaviour {
 	public Color notEnoughMoneyColor;
     public Vector3 positionOffset;
 
+	//TODO: Task 1 : bind turretTemplate to turret prefab in Inspector
 	public GameObject turretTemplate;
 
 	[HideInInspector]
@@ -37,19 +38,14 @@ public class Node : MonoBehaviour {
 	void BuildTurret (GameObject __turret)
 	{
 		
-		// TODO: Task 3/4 -- Implement build/ upgrade logic.
-
-		GameObject _turret = Instantiate(__turret, GetBuildPosition(), Quaternion.identity);
-		turret = _turret;
+		// TODO: Task 1 : Implement turret building logic
 		Debug.Log("Turret build!");
 	}
 
 
-	public void SellTurret ()
+	public void DestroyTurret ()
 	{
-		// TODO: Line 59
-
-		Destroy(turret);
+		// TODO: Task 1 : Implement turret destroy logic
 	}
 
 

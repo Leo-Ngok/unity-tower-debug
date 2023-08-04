@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Waypoints : MonoBehaviour {
 
+	//Waypoints is added to every corner of the path to implement [Optional] 
 	public static Transform[] points;
 
 	void Awake ()
