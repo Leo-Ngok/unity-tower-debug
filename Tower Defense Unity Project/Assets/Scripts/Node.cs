@@ -32,7 +32,7 @@ public class Node : MonoBehaviour {
 			return;
 
 
-		BuildTurret(turretTemplate);
+		//TODO: Task 1: if tower exists on this node, then destroy it; else create a turret.
 	}
 
 	void BuildTurret (GameObject __turret)
